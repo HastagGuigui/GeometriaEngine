@@ -9,10 +9,11 @@ void GuisFirstScene::Init()
     //thx nacho
 
     somethingIDK = new Model(Model::Square(), Vector3(0), Vector3(0), Vector3(1));
-    RendererCore::AddModel(*somethingIDK);
 
     Texture funniTexture("Sprites/gui_pog.png", Texture::Type::Default);
     TextureManager::UploadToGPU();
 
     somethingIDK->texture = &funniTexture;
+
+    RendererCore::AddModel(*somethingIDK);
 }
