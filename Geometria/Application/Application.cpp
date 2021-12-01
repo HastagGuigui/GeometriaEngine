@@ -6,6 +6,7 @@
 
 //SCENES
 #include "../Game/SampleScene.tits.h"
+#include "../Game/GuisFirstScene.h"
 #include "../Editor/Editor.h"
 #include "../Graphics/Cores/Texture/Texture.h"
 
@@ -65,9 +66,9 @@ void Application::Start()
 
 	RendererCore::SetUp();
 
-	Application::SetEditor();
+	GuisFirstScene::Init();
 
-	SampleScene::Init();
+	Application::SetEditor();
 
 	RendererCore::Start();
 
